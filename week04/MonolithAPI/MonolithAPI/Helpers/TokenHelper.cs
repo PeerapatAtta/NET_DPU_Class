@@ -27,11 +27,11 @@ public class TokenHelper
     // Method to Create JWT Token (Access Token)
     public async Task<string> CreateJwtToken(UserModel user)
     {
-        var signingCredentials = CreateSigningCredentials();
-        var claims = await CreateClaims(user);
-        var jwtSecurityToken = CreatetJwtSecurityToken(signingCredentials, claims);
-        var token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-        return token;
+        var signingCredentials = CreateSigningCredentials();// Create signing credentials for the JWT token header
+        var claims = await CreateClaims(user); // Create claims for the JWT token payload data
+        var jwtSecurityToken = CreatetJwtSecurityToken(signingCredentials, claims); // Create JWT security token (JWT Verify signature)
+        var token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken); // Write the JWT token to a string
+        return token; // Return the JWT token
     }
 
     // Method to Create Refresh Token
@@ -92,15 +92,16 @@ public class TokenHelper
         return claims;
     }
 
-    // Method to Create JWT Security Token
+    // Method to Create JWT Security Token ( JWT Verify signature)
     private JwtSecurityToken CreatetJwtSecurityToken(SigningCredentials signingCredentials, List<Claim> claims)
     {
+        // Create a new JWT security token
         var token = new JwtSecurityToken(
             issuer: jwtSettings["ValidIssuer"],
             audience: jwtSettings["ValidAudience"],
             claims: claims,
             expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(jwtSettings["ExpiryInMinutes"])),
-            signingCredentials: signingCredentials
+            signingCredentials: signingCredentials // Add the signing credentials to the token
         );
         return token;
     }
