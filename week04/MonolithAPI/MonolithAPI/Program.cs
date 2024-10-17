@@ -14,12 +14,15 @@ services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("sqlite"));
 });
-// add identity system and its db context
+
+// add identity service and its db context
 services.AddIdentity<UserModel, RoleModel>(options =>
 {
+    //Email must don't be same to other account
     options.User.RequireUniqueEmail = true;
 })
 .AddEntityFrameworkStores<AppDbContext>();
+
 // add cross-origin resource sharing
 services.AddCors(options =>
 {
@@ -31,6 +34,7 @@ services.AddCors(options =>
         .AllowAnyMethod().AllowAnyHeader();
     });
 });
+
 // add token helper
 services.AddScoped<TokenHelper>();
 // configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -48,8 +52,10 @@ if (app.Environment.IsDevelopment())
 }
 // redirect http request to https
 app.UseHttpsRedirection();
+
 // add CORS middleware
 app.UseCors("MyCors");
+
 // map enpoint for controller actions
 app.MapControllers();
 

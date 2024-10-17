@@ -31,3 +31,4 @@ E:\IT Study\02_DPU\00_WE670_Web2\Download\week01\MonolithAPI\MonolithAPI\obj\Deb
 E:\IT Study\02_DPU\00_WE670_Web2\Download\week01\MonolithAPI\MonolithAPI\obj\Debug\net8.0\MonolithAPI.pdb
 E:\IT Study\02_DPU\00_WE670_Web2\Download\week01\MonolithAPI\MonolithAPI\obj\Debug\net8.0\MonolithAPI.genruntimeconfig.cache
 E:\IT Study\02_DPU\00_WE670_Web2\Download\week01\MonolithAPI\MonolithAPI\obj\Debug\net8.0\ref\MonolithAPI.dll
+E:\IT Study\02_DPU\00_WE670_Web2\Download\week01\MonolithAPI\MonolithAPI\obj\Debug\net8.0\MonolithAPI.sourcelink.json

@@ -134,7 +134,7 @@ namespace MonolithAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("MonolithAPI.Models.RoleModel", b =>

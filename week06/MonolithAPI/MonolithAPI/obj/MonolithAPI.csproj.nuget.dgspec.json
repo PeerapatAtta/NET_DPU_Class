@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hmoo3ton/Downloads/WE670/week06/MonolithAPI/MonolithAPI/MonolithAPI.csproj": {}
+    "E:\\IT Study\\02_DPU\\00_WE670_Web2\\Download\\week06\\MonolithAPI\\MonolithAPI\\MonolithAPI.csproj": {}
   },
   "projects": {
-    "/Users/hmoo3ton/Downloads/WE670/week06/MonolithAPI/MonolithAPI/MonolithAPI.csproj": {
+    "E:\\IT Study\\02_DPU\\00_WE670_Web2\\Download\\week06\\MonolithAPI\\MonolithAPI\\MonolithAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hmoo3ton/Downloads/WE670/week06/MonolithAPI/MonolithAPI/MonolithAPI.csproj",
+        "projectUniqueName": "E:\\IT Study\\02_DPU\\00_WE670_Web2\\Download\\week06\\MonolithAPI\\MonolithAPI\\MonolithAPI.csproj",
         "projectName": "MonolithAPI",
-        "projectPath": "/Users/hmoo3ton/Downloads/WE670/week06/MonolithAPI/MonolithAPI/MonolithAPI.csproj",
-        "packagesPath": "/Users/hmoo3ton/.nuget/packages/",
-        "outputPath": "/Users/hmoo3ton/Downloads/WE670/week06/MonolithAPI/MonolithAPI/obj/",
+        "projectPath": "E:\\IT Study\\02_DPU\\00_WE670_Web2\\Download\\week06\\MonolithAPI\\MonolithAPI\\MonolithAPI.csproj",
+        "packagesPath": "C:\\Users\\OFF-PC\\.nuget\\packages\\",
+        "outputPath": "E:\\IT Study\\02_DPU\\00_WE670_Web2\\Download\\week06\\MonolithAPI\\MonolithAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hmoo3ton/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\OFF-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -90,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

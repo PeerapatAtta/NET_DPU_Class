@@ -29,6 +29,8 @@ public class ProductsController : ControllerBase
             Name = x.Name,
             Price = x.Price
         }).ToListAsync();
+        
+        // Send reponse
         return Ok(results);
     }
 
