@@ -37,6 +37,7 @@ services.AddCors(options =>
 
 // add token helper
 services.AddScoped<TokenHelper>();
+
 // configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
